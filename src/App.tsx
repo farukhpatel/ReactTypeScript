@@ -10,7 +10,7 @@ const App: React.FC = () => {
 
   const handleAdd = (e: React.FormEvent): void => {
     e.preventDefault();
-    if (todo === "" || !todo) alert("Please enter your todo");
+    if (todo === "" || !todo) return alert("Please enter your todo");
 
     const newTodo: Todo = { id: Date.now(), todo, isCompleted: false };
 
