@@ -17,7 +17,6 @@ export default function InputField({
   const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const value: string = e.target.value;
     setTodo(value);
-    console.log("type value", value);
   };
 
   return (
